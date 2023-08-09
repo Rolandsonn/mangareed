@@ -1,0 +1,52 @@
+@import "../../../assets/styles/libs/mixins.scss";
+@import "../../../assets/styles/libs/variables.scss";
+.footer {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span {
+      color: #000;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+    }
+  }
+  &__divider {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 40px;
+    border-top: 1px solid #bbb;
+  }
+  &__bottom {
+    margin-bottom: 30px;
+  }
+  &__list_privacy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  &__item_privacy {
+    span {
+      @include fz14;
+    }
+    a {
+      @include fz14;
+      text-decoration-line: underline;
+    }
+  }
+}

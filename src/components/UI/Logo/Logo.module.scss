@@ -1,0 +1,31 @@
+@import "../../../assets/styles/libs/mixins.scss";
+@import "../../../assets/styles/libs/variables.scss";
+.logo {
+  display: flex;
+  gap: 5px;
+  width: 339px;
+}
+.wrapper {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  b {
+    @include fz24;
+    font-weight: 500;
+    line-height: normal;
+    color: #000;
+  }
+}
+.title {
+  @include fz16;
+  font-weight: 400;
+  line-height: normal;
+  color: #878787;
+}
+.subtitle {
+  @include fz20;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}

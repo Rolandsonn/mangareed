@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", "Roboto", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 1240px;
+}
+.content {
+  min-height: calc(100vh - 250px);
+}
+body {
+  line-height: 1;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

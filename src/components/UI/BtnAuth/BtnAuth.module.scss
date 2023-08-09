@@ -1,0 +1,31 @@
+@import "../../../assets/styles/libs/mixins.scss";
+@import "../../../assets/styles/libs/variables.scss";
+
+.btn_register {
+  @include btn;
+  transition: all 0.8s;
+  background-color: $main-color;
+  border: 2px solid $main-color;
+  color: #fff;
+  &:hover {
+    background: $main-color;
+    box-shadow: 0px 0px 20px 0px $main-color;
+  }
+  &:focus {
+    @include btnFocus;
+  }
+}
+.btn_enter {
+  @include btn;
+  transition: all 0.8s;
+  border: 2px solid $main-color;
+  background-color: transparent;
+  &:hover {
+    background: $main-color;
+    box-shadow: 0px 0px 20px 0px $main-color;
+    color: #fff;
+  }
+  &:focus {
+    @include btnFocus;
+  }
+}
